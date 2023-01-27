@@ -1,0 +1,23 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate": "npm run generate:registry && npm run generate:tokenlist && npm run generate:lyfe-for-gas",
+    "generate:registry": "node scripts/generate-registry.js",
+    "generate:tokenlist": "node scripts/generate-tokenlist.js",
+    "generate:lyfe-for-gas": "node scripts/generate-lyfe-for-gas.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT License (MIT)",
+  "devDependencies": {
+    "@fleekhq/fleek-storage-js": "^1.0.9",
+    "axios": "^0.20.0",
+    "ethers": "^5.0.9"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
